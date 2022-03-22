@@ -1,0 +1,221 @@
+.main{
+	flex-grow: 1;
+}
+
+.intro {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../images/rectangle.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -57px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 767px) {
+        margin-top: -72px;
+    }
+}
+
+.intro h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 72px;
+    padding-bottom: 40px;
+    text-transform:uppercase;
+    @media (min-width: 767px) and (max-width: 1024px) {
+        font-size: 50px;
+    }
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}
+
+.intro p {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.sign-upbtn a {
+    color: rgba(237, 76, 92, 1);
+}
+
+.sign-upbtn {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background: #fff;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.sign-upbtn:hover {
+    opacity: 0.8;
+}
+
+.sign-up {
+    text-transform:uppercase;
+    position: absolute;
+    left: 26%;
+    top: 34%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.head {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+    padding: 60px;
+}
+
+.features {
+    background: #fafafa;
+}
+
+.features_main {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 110px 0;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (max-width:767px) {
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+
+.features_main img {
+    padding: 20px;
+}
+
+.box-text {
+    text-align: center;
+    color: #000;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    margin: -105px auto;
+    max-width: 270px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(46, 45, 45, 0.5);
+}
+
+.box-text h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.box-text p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.box-text a {
+    color: #ED4C5C;
+    font-size: 12px;
+}
+
+.box-text a:hover {
+    color: #ff0800;
+}
+
+.technology {
+    padding: 100px 0;
+}
+
+.technology-main {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.main-box {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 50%;
+        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 767px) {
+        // display: flex;
+        justify-content: center;
+    }
+}
+
+#box {
+    @media (max-width: 767px) {
+        padding: 120px 0;
+    }
+}
+
+.main-num {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.num {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-size: 100px;
+    padding: 0 69px;
+}
+
+.num img {
+    margin: -60px 0 0 60px;
+    width: 50%;
+    height: 86px;
+}
+    
+.num h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.num p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+// Header
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    text-transform:uppercase;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.nav-list {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    @media (max-width:767px){
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4%;
+        left: 35%;
+    }
+}
+
+.nav-list li {
+    padding: 0 10px;
+    @media (max-width: 767px) {
+        padding: 10px 0;
+    }
+}
+
+.nav-list li a {
+    color: #fff;
+}
+
+.nav-list li a:hover {
+    color: #d3d3d3;
+}
+
+.log {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.log:hover {
+    opacity: 0.8;
+}
+
+.log a {
+    color: #fff;
+}
+
+.login {
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+// Burger Menu
+
+.show {
+    @media (max-width: 767px) {
+        top: 9%;
+        left: 84%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 50px;
+    }
+}
+
+.show:before,
+.show:after,
+.show div {
+    @media (max-width: 767px) {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 6px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+}
+
+.show:hover::before {
+    @media (max-width: 767px) {
+        transform: translateY(12px) rotate(135deg);
+    }
+}
+
+.show:hover::after {
+    @media (max-width: 767px) {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+}
+
+.show:hover div {
+    @media (max-width: 767px) {
+        transform: scale(0);
+    }
+}
+
+.show:hover ~ .nav-list {
+    display: block;
+}
